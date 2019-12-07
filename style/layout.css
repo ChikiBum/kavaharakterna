@@ -5,21 +5,21 @@
 .container {
   max-width: 1130px;
   width: 100%;
-  padding: 0 15px;
+  padding: 0 1px;
   margin: 0 auto; }
 
 .ob-row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px; }
+  margin-left: -1px;
+  margin-right: -1px; }
 
 .ob-row + .ob-row {
   /*делаем отспут сверху для первой строчки, после первой строчки. У первой нам не нужен отступ сверху  */
   margin-top: 1rem; }
 
 [class^='ob-col-'] {
-  padding: 0 15px;
+  padding: 0 1px;
   width: 100%; }
 
 .ob-col-1 {

@@ -4,7 +4,7 @@
 body {
     font-family: 'Aleo', serif;
     color: $primaryColor;
-    background-color: burlywood;
+    // background-color: burlywood;
     }
 
 a {
@@ -13,19 +13,21 @@ a {
 }
 
 
-.ob-logo {
-    font-family: wc_mano_negra_btaregular, serif;
-    font-size: 50px;
-    text-decoration: none;
-    color: inherit;
-    span {
-        color: $red;
-    }
-}
+// .ob-logo {
+//     font-family: wc_mano_negra_btaregular, serif;
+//     font-size: 50px;
+//     text-decoration: none;
+//     color: inherit;
+//     span {
+//         color: $red;
+//     }
+   
+// }
 
 
 .ob-header {
-    min-height: calc(100vh - 187px);
+    // min-height: calc(100vh - 187px);
+    max-height: 100vh;
     display: flex;
     align-items: flex-start;
     text-align: center;
@@ -38,7 +40,7 @@ a {
         size: cover;
         repeat: no-repeat;
         };
-        object-fit: fill;
+    object-fit: cover;
         
 
     &-menu__wrapper{
@@ -62,6 +64,7 @@ a {
         @media screen and (max-width: 265px) {
             display: none;
         }
+        margin-bottom: 3rem;
     }
 
     &__title {
@@ -259,18 +262,19 @@ a {
 // section ob-dishes
 
 .ob-dish {
-
+    
     overflow: hidden;
     transform: rotate(360deg);
     transition: transform .9s; 
     padding-bottom: 2rem;
+    // background-color: #fff;
 
     &__thumb{
-        height: 500px;
+        max-height: 400px;
         overflow: hidden;
         margin-bottom: 1.5rem;
         position: relative;
- 
+       
     }
 
     &-infoHidden{
@@ -312,13 +316,15 @@ a {
             letter-spacing: .05em;
             line-height: 1.1;
             margin: 0 0 .875em;
+            padding: 0 5px;
          }
 
          &-rating{
              position: relative;
              height: 13px;
              width: 80px;
-             background: {
+             margin-left: 5px;
+            background: {
                 image: url(../img/stars-grey.png);
                 size: contain;
                 repeat: no-repeat;

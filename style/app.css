@@ -5,21 +5,21 @@
 .container {
   max-width: 1130px;
   width: 100%;
-  padding: 0 15px;
+  padding: 0 1px;
   margin: 0 auto; }
 
 .ob-row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px; }
+  margin-left: -1px;
+  margin-right: -1px; }
 
 .ob-row + .ob-row {
   /*делаем отспут сверху для первой строчки, после первой строчки. У первой нам не нужен отступ сверху  */
   margin-top: 1rem; }
 
 [class^='ob-col-'] {
-  padding: 0 15px;
+  padding: 0 1px;
   width: 100%; }
 
 .ob-col-1 {
@@ -74,21 +74,21 @@
 .container {
   max-width: 1130px;
   width: 100%;
-  padding: 0 15px;
+  padding: 0 1px;
   margin: 0 auto; }
 
 .ob-row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px; }
+  margin-left: -1px;
+  margin-right: -1px; }
 
 .ob-row + .ob-row {
   /*делаем отспут сверху для первой строчки, после первой строчки. У первой нам не нужен отступ сверху  */
   margin-top: 1rem; }
 
 [class^='ob-col-'] {
-  padding: 0 15px;
+  padding: 0 1px;
   width: 100%; }
 
 .ob-col-1 {
@@ -139,23 +139,14 @@
 
 body {
   font-family: 'Aleo', serif;
-  color: #3b3b3b;
-  background-color: burlywood; }
+  color: #3b3b3b; }
 
 a {
   color: inherit;
   text-decoration: none; }
 
-.ob-logo {
-  font-family: wc_mano_negra_btaregular, serif;
-  font-size: 50px;
-  text-decoration: none;
-  color: inherit; }
-  .ob-logo span {
-    color: #f34b4b; }
-
 .ob-header {
-  min-height: calc(100vh - 187px);
+  max-height: 100vh;
   display: flex;
   align-items: flex-start;
   text-align: center;
@@ -164,7 +155,7 @@ a {
   background-color: goldenrod;
   background-size: cover;
   background-repeat: no-repeat;
-  object-fit: fill; }
+  object-fit: cover; }
   .ob-header-menu__wrapper {
     display: flex;
     justify-content: space-between;
@@ -177,7 +168,8 @@ a {
   .ob-header-logo {
     display: inline-block;
     max-width: 100%;
-    padding-top: 2rem; }
+    padding-top: 2rem;
+    margin-bottom: 3rem; }
     @media screen and (max-width: 265px) {
       .ob-header-logo {
         display: none; } }
@@ -322,7 +314,7 @@ a {
   transition: transform .9s;
   padding-bottom: 2rem; }
   .ob-dish__thumb {
-    height: 500px;
+    max-height: 400px;
     overflow: hidden;
     margin-bottom: 1.5rem;
     position: relative; }
@@ -356,11 +348,13 @@ a {
     font-weight: 300;
     letter-spacing: .05em;
     line-height: 1.1;
-    margin: 0 0 .875em; }
+    margin: 0 0 .875em;
+    padding: 0 5px; }
   .ob-dish-rating {
     position: relative;
     height: 13px;
     width: 80px;
+    margin-left: 5px;
     background-image: url(../img/stars-grey.png);
     background-size: contain;
     background-repeat: no-repeat; }
