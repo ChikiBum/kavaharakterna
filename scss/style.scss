@@ -33,10 +33,9 @@ a {
     text-align: center;
     color: #fff;
     background: {
-        // image: url(../img/hero.jpg);
-        // image: url(../img/cofee_plant/tmb_188606_1385.jpg);
-        image: url(../img/cofee_plant/fonstola_149661.jpg);
-        color: goldenrod;
+    //    image: url(../img/cofee_plant/fonstola_149661.jpg);
+    image: url(../img/Header_bg.jpg);
+        // color: goldenrod;
         size: cover;
         repeat: no-repeat;
         };
@@ -77,10 +76,9 @@ a {
        @media screen and (max-width: 713px) {
            font-size: 2.5rem;
            background: {
-            // image: url(../img/hero.jpg);
-            // image: url(../img/cofee_plant/tmb_188606_1385.jpg);
-            image: none;
-            color: goldenrod;
+            image: url(../img/Header_bg.jpg);
+            // image: none;
+            // color: goldenrod;
            }
            height: auto;
        }
@@ -158,7 +156,7 @@ a {
 
 
 .ob-section-menu {
-    border-top: 4px solid goldenrod;
+    // border-top: 4px solid goldenrod;
     text-align: center;
 
     &__title {
@@ -296,6 +294,19 @@ a {
         transform: translateY(0); /* спускается полупрозрачное окошко с инфой при наведении*/
     }
 
+    &__divimg {
+        background: {
+            //    image: url(../img/cofee_plant/fonstola_149661.jpg);
+            image: url(../img/kava.png);
+                // color: goldenrod;
+                size: contain;
+                repeat: no-repeat;
+        }   
+    width: 140px;
+    height: 280px;
+    margin: auto;
+    }
+
     &__img{
         display: block;
         width: 100%;
@@ -305,7 +316,7 @@ a {
 
     &__head{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
          }
 
          &__title, 
@@ -320,6 +331,7 @@ a {
          }
 
          &-rating{
+            display: inline-block;
              position: relative;
              height: 13px;
              width: 80px;
@@ -353,9 +365,9 @@ a {
 
 .ob-footer {
     align-items: center;
-    padding-left: calc(50% - 6rem);
+        // padding-left: calc(50% - 6rem);
         background: {
-        color: goldenrod;
+        // color: goldenrod;
         size: cover;
         repeat: no-repeat;
         };
@@ -363,6 +375,8 @@ a {
     
         &__wrapper{
             display: flex;
+			justify-content:center;
+			width: 100%;
         }
 
         &__decr{

@@ -82,8 +82,7 @@ a {
   align-items: flex-start;
   text-align: center;
   color: #fff;
-  background-image: url(../img/cofee_plant/fonstola_149661.jpg);
-  background-color: goldenrod;
+  background-image: url(../img/Header_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover; }
@@ -112,8 +111,7 @@ a {
   @media screen and (max-width: 713px) {
     .ob-header {
       font-size: 2.5rem;
-      background-image: none;
-      background-color: goldenrod;
+      background-image: url(../img/Header_bg.jpg);
       height: auto; } }
   .ob-header__desc {
     position: relative;
@@ -169,7 +167,6 @@ a {
     color: black; }
 
 .ob-section-menu {
-  border-top: 4px solid goldenrod;
   text-align: center; }
   .ob-section-menu__title {
     background-color: goldenrod;
@@ -266,6 +263,13 @@ a {
   .ob-dish:hover .ob-dish-infoHidden {
     transform: translateY(0);
     /* спускается полупрозрачное окошко с инфой при наведении*/ }
+  .ob-dish__divimg {
+    background-image: url(../img/kava.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 280px;
+    margin: auto; }
   .ob-dish__img {
     display: block;
     width: 100%;
@@ -273,7 +277,7 @@ a {
     object-fit: fill; }
   .ob-dish__head {
     display: flex;
-    justify-content: space-between; }
+    justify-content: center; }
   .ob-dish__title, .ob-dish__price {
     font-size: 1rem;
     font-weight: 300;
@@ -282,6 +286,7 @@ a {
     margin: 0 0 .875em;
     padding: 0 5px; }
   .ob-dish-rating {
+    display: inline-block;
     position: relative;
     height: 13px;
     width: 80px;
@@ -304,12 +309,12 @@ a {
 
 .ob-footer {
   align-items: center;
-  padding-left: calc(50% - 6rem);
-  background-color: goldenrod;
   background-size: cover;
   background-repeat: no-repeat; }
   .ob-footer__wrapper {
-    display: flex; }
+    display: flex;
+    justify-content: center;
+    width: 100%; }
   .ob-footer__decr {
     margin: 19px 0;
     padding: 0 1rem; }
